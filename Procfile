@@ -1,1 +1,1 @@
-web: gunicorn api_uwtsd.wsgi
+web: gunicorn uwtsd_api.wsgi
