@@ -7,4 +7,4 @@ class Task(models.Model):
     order = models.IntegerField(null=True)
 
     def __str__(self):
-        return self.title
+        return self.name

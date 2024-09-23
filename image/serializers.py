@@ -5,4 +5,4 @@ from rest_framework import serializers
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = ['id', 'project', 'name', 'imageUrl']
+        fields = ['id', 'task', 'alt', 'imageUrl', 'text']
