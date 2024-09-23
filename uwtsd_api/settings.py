@@ -140,7 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ## Host name that allow this app to be used
 
-ALLOWED_HOSTS = ['localhost', 'uwtsdporfolioapi-uwtsdportfolio.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', 'https://apiuwtsd10-uwtsdportfolio.up.railway.app','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [ 'http://*' ,'https://apiuwtsd10-uwtsdportfolio.up.railway.app']
 
