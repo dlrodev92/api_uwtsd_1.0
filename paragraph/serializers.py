@@ -5,4 +5,4 @@ from rest_framework import serializers
 class ParagraphSerializer(serializers.ModelSerializer):
     class Meta:
         model = Paragraph
-        fields = ['id', 'paragraph', 'order', 'project']
+        fields = ['id', 'paragraph', 'order', 'task']
