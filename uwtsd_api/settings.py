@@ -142,7 +142,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = ['localhost', 'uwtsdporfolioapi-uwtsdportfolio.up.railway.app','127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = [ 'http://*' ,'https://apiuwtsd10-uwtsdportfolio.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = [ 'http://*' ,'https://apiuwtsd10-uwtsdportfolio.up.railway.app']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
