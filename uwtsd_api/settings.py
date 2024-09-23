@@ -28,7 +28,7 @@ load_dotenv()
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -140,9 +140,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ## Host name that allow this app to be used
 
-ALLOWED_HOSTS = ['localhost', 'https://apiuwtsd10-uwtsdportfolio.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', 'apiuwtsd10-uwtsdportfolio.up.railway.app', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = [ 'http://*' ,'https://apiuwtsd10-uwtsdportfolio.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    'http://apiuwtsd10-uwtsdportfolio.up.railway.app',
+    'https://apiuwtsd10-uwtsdportfolio.up.railway.app'
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
