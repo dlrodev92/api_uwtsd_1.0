@@ -26,4 +26,6 @@ urlpatterns = [
     path('api/', include('tag.urls')),
     path('api/', include('technology.urls')),
     path('api/', include('task.urls')),
+    path('api/', include('file.urls')),
+    path('api/', include('image.urls')),
 ]
