@@ -5,6 +5,7 @@ from paragraph.serializers import ParagraphSerializer
 
 
 class TaskSerializer(serializers.ModelSerializer):
+    
     subtitles = SubtitleSerializer(many=True, read_only=True)
     paragraphs = ParagraphSerializer(many=True, read_only=True)
     
