@@ -151,6 +151,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://daviduwtsdportfolio.netlify.app',
+    "http://localhost:5173",
 ]
 
 # Default primary key field type
