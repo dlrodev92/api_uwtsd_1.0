@@ -52,10 +52,12 @@ INSTALLED_APPS = [
     'tag',
     'technology',
     'task',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -147,6 +149,9 @@ CSRF_TRUSTED_ORIGINS = [
     'https://apiuwtsd10-uwtsdportfolio.up.railway.app'
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'https://daviduwtsdportfolio.netlify.app',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
