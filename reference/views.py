@@ -6,4 +6,4 @@ from uwtsd_api.permissions import IsSuperUser
 class ReferenceViewSet(viewsets.ModelViewSet):
     queryset = Reference.objects.all()
     serializer_class = ReferenceSerializer
-    permission_classes = [IsSuperUser]
+  

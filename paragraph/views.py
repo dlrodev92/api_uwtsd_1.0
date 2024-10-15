@@ -6,5 +6,5 @@ from uwtsd_api.permissions import IsSuperUser
 class ParagraphViewSet(viewsets.ModelViewSet):
     queryset = Paragraph.objects.all()
     serializer_class = ParagraphSerializer
-    permission_classes = [IsSuperUser]
+  
 

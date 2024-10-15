@@ -6,5 +6,5 @@ from uwtsd_api.permissions import IsSuperUser
 class ImageViewSet(viewsets.ModelViewSet):
     queryset = Image.objects.all()
     serializer_class = ImageSerializer
-    permission_classes = [IsSuperUser]
+    
 

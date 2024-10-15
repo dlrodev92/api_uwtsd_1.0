@@ -6,5 +6,5 @@ from uwtsd_api.permissions import IsSuperUser
 class SubtitleViewSet(viewsets.ModelViewSet):
     queryset = Subtitle.objects.all()
     serializer_class = SubtitleSerializer
-    permission_classes = [IsSuperUser]
+    
 

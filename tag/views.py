@@ -6,5 +6,5 @@ from uwtsd_api.permissions import IsSuperUser
 class TagViewSet(viewsets.ModelViewSet):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
-    permission_classes = [IsSuperUser]
+    
 
