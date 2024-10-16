@@ -4,6 +4,8 @@ from task.serializers import TaskSerializer
 from reference.serializers import ReferenceSerializer
 from technology.models import Technology
 from tag.models import Tag
+from file.models import File
+from file.serializers import FileSerializer
 
 
 
@@ -23,6 +25,7 @@ class ProjectSerializer(serializers.ModelSerializer):
         slug_field='name',
         required=False
     )
+    files = FileSerializer(many=True, read_only=True)
 
     class Meta:
         model = Project
